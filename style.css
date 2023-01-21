@@ -108,7 +108,7 @@ a:hover{
     margin: 1rem;
     overflow: clip;
     translate: var(--imgPosition);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .image-container img{

@@ -14,7 +14,7 @@ function translateLeft() {
     numberiser = parseInt(currentValue);
     console.log(numberiser);    
 
-    newValue = numberiser - 100;
+    newValue = numberiser - 50;
 
     console.log(newValue);
     
@@ -34,7 +34,7 @@ function translateRight() {
     numberiser = parseInt(currentValue);
     console.log(numberiser);    
 
-    newValue = numberiser + 100;
+    newValue = numberiser + 50;
    
     document.documentElement.style
     .setProperty("--imgPosition", newValue + "px");       
@@ -49,9 +49,16 @@ function translateRight() {
 let sliderArray = [];
 
 sliderArray.push("slide_show/newImage4.jpg");
+sliderArray.push("slide_show/IMG_2978 2.jpg");
 sliderArray.push("slide_show/newIamge6.jpg");
 sliderArray.push("slide_show/newImage5.jpg");
 sliderArray.push("slide_show/eye red lash.jpg");
+sliderArray.push("slide_show/FullSizeRender.jpg");
+
+sliderArray.push("slide_show/newImage4.jpg");
+sliderArray.push("slide_show/IMG_2978 2.jpg");
+sliderArray.push("slide_show/newIamge6.jpg");
+sliderArray.push("slide_show/newImage5.jpg");
 sliderArray.push("slide_show/eye red lash.jpg");
 sliderArray.push("slide_show/FullSizeRender.jpg");
 
@@ -104,22 +111,6 @@ for (let i = 0; i < sliderArray.length; i++) {
 
 
 
-
-
-// function createImage(src){
-
-//     let image_container = document.createElement("div");
-//     image_container.setAttribute("class","image-container");
-
-//     let newImage = document.createElement("img");
-//         newImage.setAttribute("src",src);
-
-//         image_container.appendChild(newImage);
-//         slides.appendChild(image_container);
-
-// };
-
-// createImage(sliderArray[i]);
 
 
 
