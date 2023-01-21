@@ -50,8 +50,9 @@ h1{
 
 #banner-image {
     width: 100%;
+    image-rendering: auto;
     object-fit: contain;
-    translate: 0% -30%;      
+    translate: 0% -30%;     
 
 }
 
@@ -173,14 +174,6 @@ a:hover{
   
 }
 
-#footer {
-    position: relative;
-    /* margin-top: 10%; */
-    height:25rem;
-    width:100vw;
-    background-color:gray ;
-}
-
 #acreds {
     width:100vw;
     position: relative;
@@ -209,4 +202,98 @@ a:hover{
 #gti{
     width: 150px;
     height: 150px;
+}
+
+#footer {
+    position: relative;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    padding: 2rem 2rem 2rem 2rem;
+    height:20rem;
+    width:100vw;
+    background-color:gray ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#social_media {
+    position: relative;
+    height: 100%;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+#social_media a{
+    position: relative;
+    font-size: 6rem;
+    color: white;
+}
+
+#social_media a:hover{
+    position: relative;
+    font-size: 7rem;
+    color: rgb(226, 43, 128);
+    transition: 0.5;
+}
+
+#center_column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width:50%;
+    height:100%;
+    
+}
+
+h3{
+    font-size: 2rem;
+    color: white;
+    margin-top: 5%;
+    margin: 0%;
+    
+
+}
+
+h4{
+    font-size: 2rem;
+    color: white;
+    margin: 0%;
+}
+
+#footer-contact {
+    font-size: 2rem;
+    color: white;
+    margin:0%;
+}
+
+#footer-copy{
+    font-size: 1rem;
+    color: white;
+    /* margin:5%; */
+    margin-bottom: 0%;
+}
+
+#side_column{
+    position: relative;
+    width:20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+
+
+#side_column img{
+   
+    height:30%;
+        
 }

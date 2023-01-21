@@ -59,7 +59,7 @@ sliderArray.push("slide_show/newImage4.jpg");
 sliderArray.push("slide_show/IMG_2978 2.jpg");
 sliderArray.push("slide_show/newIamge6.jpg");
 sliderArray.push("slide_show/newImage5.jpg");
-sliderArray.push("slide_show/eye red lash.jpg");
+sliderArray.push("slide_show/eye red lash crop.jpg");
 sliderArray.push("slide_show/FullSizeRender.jpg");
 
 console.log(sliderArray);
