@@ -244,7 +244,7 @@ a:hover{
 #center_column{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -253,13 +253,34 @@ a:hover{
     
 }
 
+#center_right{
+    height:100%;
+    top:15%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#center_left{
+    height:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 h3{
     font-size: 2rem;
     color: white;
     margin-top: 5%;
-    margin: 0%;
-    
+    margin: 0%;    
 
+}
+
+h3:hover{
+    color: rgb(226, 43, 128); ;
+    transition: 1s;
 }
 
 h4{
@@ -268,10 +289,20 @@ h4{
     margin: 0%;
 }
 
+h4:hover{
+    color: rgb(226, 43, 128);
+    transition: 1s;
+}
+
 #footer-contact {
     font-size: 2rem;
     color: white;
     margin:0%;
+}
+
+#footer-contact:hover{
+    color: rgb(226, 43, 128);
+    transition: 1s;
 }
 
 #footer-copy{
@@ -279,6 +310,11 @@ h4{
     color: white;
     /* margin:5%; */
     margin-bottom: 0%;
+}
+
+#footer-copy:hover{
+    color: rgb(226, 43, 128);
+    transition: 1s;
 }
 
 #side_column{
