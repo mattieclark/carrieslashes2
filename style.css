@@ -399,7 +399,8 @@ a:hover{
 
 #center_right{
     height:100%;
-    top:15%;
+    top:10%;
+    left:0%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -419,7 +420,7 @@ a:hover{
 
 #center_left img{
     position: relative;
-    width:100%;
+    width:85%;
 
 }
 
@@ -481,7 +482,7 @@ h4:hover{
 
 #side_column{
     position: relative;
-    width:20%;
+    width:10%;
     height:100%;
     display: flex;
     flex-direction: column;
@@ -495,8 +496,8 @@ h4:hover{
         margin-top: 10%;
         margin-bottom: 5%;
         margin-left: 2%;
-        margin-right: 2%;
-        width:100%;
+        margin-right: 0%;
+        width:70%;
         height:15%;
         display: flex;
         flex-direction: row;
@@ -506,9 +507,10 @@ h4:hover{
 
 
 
-#side_column img{
-   
-    width:20%;
+#side_column img{   
+    position:relative;
+    height:25%;
+    left:20%;
         
 }
 
