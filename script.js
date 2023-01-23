@@ -119,14 +119,14 @@ let touchendX = 0
 
 function checkDirection() {
     if (touchendX < touchstartX) {
-        alert('swiped left!');
+        // alert('swiped left!');
 
         translateLeft();
        
     }
 
     if (touchendX > touchstartX) {
-         alert('swiped right!')
+        //  alert('swiped right!')
 
          translateRight();
         
