@@ -24,6 +24,8 @@ function translateLeft() {
 
 
 
+
+
 function translateRight() {
 
     let styles = getComputedStyle(document.documentElement);
@@ -40,8 +42,6 @@ function translateRight() {
     .setProperty("--imgPosition", newValue + "px");       
     
 };
-
-
 
 
 
@@ -114,6 +114,40 @@ for (let i = 0; i < sliderArray.length; i++) {
 
 //////////////////mobile gallery swipe////////////////////////////////
 
+function translateLeft_mobile() {
+    let styles = getComputedStyle(document.documentElement);
+    let currentValue = styles.getPropertyValue("--imgPosition");
+        
+    console.log(currentValue);
+
+    numberiser = parseInt(currentValue);
+    console.log(numberiser);    
+
+    newValue = numberiser - 150;
+
+    console.log(newValue);
+    
+    document.documentElement.style
+    .setProperty("--imgPosition", newValue + "px");     
+};
+
+function translateRight_mobile() {
+
+    let styles = getComputedStyle(document.documentElement);
+    let currentValue = styles.getPropertyValue("--imgPosition");
+        
+    console.log(currentValue);
+
+    numberiser = parseInt(currentValue);
+    console.log(numberiser);    
+
+    newValue = numberiser + 150;
+   
+    document.documentElement.style
+    .setProperty("--imgPosition", newValue + "px");       
+    
+};
+
 let touchstartX = 0
 let touchendX = 0
 
@@ -121,14 +155,14 @@ function checkDirection() {
     if (touchendX < touchstartX) {
         // alert('swiped left!');
 
-        translateLeft();
+        translateLeft_mobile();
        
     }
 
     if (touchendX > touchstartX) {
         //  alert('swiped right!')
 
-         translateRight();
+         translateRight_mobile();
         
     }
 
