@@ -123,7 +123,7 @@ function translateLeft_mobile() {
     numberiser = parseInt(currentValue);
     console.log(numberiser);    
 
-    newValue = numberiser - 150;
+    newValue = numberiser - 200;
 
     console.log(newValue);
     
@@ -141,7 +141,7 @@ function translateRight_mobile() {
     numberiser = parseInt(currentValue);
     console.log(numberiser);    
 
-    newValue = numberiser + 150;
+    newValue = numberiser + 200;
    
     document.documentElement.style
     .setProperty("--imgPosition", newValue + "px");       
