@@ -114,57 +114,96 @@ for (let i = 0; i < sliderArray.length; i++) {
 
 //////////////////mobile gallery swipe////////////////////////////////
 
-function translateLeft_mobile() {
-    let styles = getComputedStyle(document.documentElement);
-    let currentValue = styles.getPropertyValue("--imgPosition");
-        
-    console.log(currentValue);
 
-    numberiser = parseInt(currentValue);
-    console.log(numberiser);    
 
-    newValue = numberiser - 200;
 
-    console.log(newValue);
+// function translateLeft_mobile() {
+//     let styles = getComputedStyle(document.documentElement);
+//     let currentValue = styles.getPropertyValue("--imgPosition");
     
-    document.documentElement.style
-    .setProperty("--imgPosition", newValue + "px");     
-};
-
-function translateRight_mobile() {
-
-    let styles = getComputedStyle(document.documentElement);
-    let currentValue = styles.getPropertyValue("--imgPosition");
         
-    console.log(currentValue);
+//     console.log(currentValue);
 
-    numberiser = parseInt(currentValue);
-    console.log(numberiser);    
+//     numberiser = parseInt(currentValue);
+//     console.log(numberiser);    
 
-    newValue = numberiser + 200;
+//     newValue = numberiser - 20;
+
+
+//     console.log(newValue);
+    
+//     document.documentElement.style
+//     .setProperty("--imgPosition", newValue + "%");     
+// };
+
+// function translateRight_mobile() {
+
+//     let styles = getComputedStyle(document.documentElement);
+//     let currentValue = styles.getPropertyValue("--imgPosition");
    
-    document.documentElement.style
-    .setProperty("--imgPosition", newValue + "px");       
+        
+//     console.log(currentValue);
+
+//     numberiser = parseInt(currentValue);
+//     console.log(numberiser);    
+
+//     newValue = numberiser + 20;
+   
+//     document.documentElement.style
+//     .setProperty("--imgPosition", newValue + "%");       
     
-};
+// };
+
+
 
 let touchstartX = 0
 let touchendX = 0
 
 function checkDirection() {
+   
+
+    function mobileSwipe(value){             
+
+        let styles = getComputedStyle(document.documentElement);
+        let currentValue = styles.getPropertyValue("--imgPosition");   
+            
+        console.log(currentValue);
+    
+        numberiser = parseInt(currentValue);
+        console.log(numberiser + "numbriser");    
+    
+        newValue = numberiser + value;
+        console.log(newValue + "newValue");
+       
+        document.documentElement.style
+        .setProperty("--imgPosition", newValue + "px");
+    }
+
+
     if (touchendX < touchstartX) {
         // alert('swiped left!');
+        let swipeValue = touchendX - touchstartX;
 
-        translateLeft_mobile();
+        console.log(swipeValue);
+        // translateLeft_mobile();
+        mobileSwipe(swipeValue);
        
     }
 
     if (touchendX > touchstartX) {
+        let swipeValue = touchendX - touchstartX;
         //  alert('swiped right!')
+        console.log(swipeValue);
 
-         translateRight_mobile();
-        
+        mobileSwipe(swipeValue);
+        //  translateRight_mobile();
+                      
     }
+
+    
+    
+    
+    
 
 }
 
