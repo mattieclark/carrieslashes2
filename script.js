@@ -112,6 +112,39 @@ for (let i = 0; i < sliderArray.length; i++) {
 
 
 
+//////////////////mobile gallery swipe////////////////////////////////
+
+let touchstartX = 0
+let touchendX = 0
+
+function checkDirection() {
+    if (touchendX < touchstartX) {
+        alert('swiped left!');
+
+        translateLeft();
+       
+    }
+
+    if (touchendX > touchstartX) {
+         alert('swiped right!')
+
+         translateRight();
+        
+    }
+
+}
+
+document.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX
+})
+
+document.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX
+    checkDirection()
+})
+
+
+
 
 
 
