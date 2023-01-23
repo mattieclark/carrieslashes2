@@ -420,7 +420,7 @@ a:hover{
 
 #center_left img{
     position: relative;
-    width:85%;
+    width:75%;
 
 }
 
@@ -513,6 +513,16 @@ h4:hover{
     left:20%;
         
 }
+
+@media only screen and (max-width:700px) {    
+    #side_column img{   
+        position:relative;
+        width:40%;
+        left:0%;
+            
+    }
+}
+
 
 /* @media only screen and (max-with:700px) {
     #side_column img{
