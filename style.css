@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaisei+Opti:wght@700&family=Lobster&family=Nanum+Myeongjo&family=Outfit:wght@400;700&family=Pacifico&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Satisfy&family=Spirax&display=swap');
 
 :root{
     --imgPosition: 0px;
@@ -29,6 +30,7 @@ container {
 
 h1{
     color: grey;
+    font-family:'Nanum Myeongjo', serif;
 }
 
 #banner {
@@ -38,6 +40,18 @@ h1{
     /* background-color: rgb(176, 179, 179); */
     overflow: clip;
 }
+
+@media only screen and (max-width: 700px){
+    #banner {
+        width: 100vw;
+        height: fit-content;
+        padding: 1rem;
+        /* background-color: rgb(176, 179, 179); */
+        overflow: clip;
+    }
+};
+    
+
 
 .boundry{
     position: relative;
@@ -58,6 +72,8 @@ h1{
 
 h2 {
     color: grey;
+    /* font-family: 'Pacifico', cursive; */
+    font-family:'Nanum Myeongjo', serif;
 }
 
 #open-quote{
@@ -92,6 +108,13 @@ a:hover{
  font-size: larger;
  color: rgb(226, 43, 128);
  transition: 0.4s;
+}
+
+#slide_boundry{   
+    position: relative;
+    margin: 1rem;
+    width:100vw;
+
 }
 
 #slides{
@@ -131,6 +154,14 @@ a:hover{
 
 }
 
+@media only screen and (max-width:700px){
+    #arrow_left{
+        display:none;
+    }
+}
+    
+
+
 #arrow_right{
     width:50px;
     height:50px;
@@ -142,6 +173,12 @@ a:hover{
     color:   rgb(197, 236, 253);
     z-index: +1;
     
+}
+
+@media only screen and (max-width:700px){
+    #arrow_right{
+        display:none;
+    }
 }
 
 #arrow_left:hover{
@@ -165,6 +202,8 @@ a:hover{
     padding-right: 10%;
 }
 
+
+
 #treament_content{
     position: relative;
     display:flex;
@@ -172,6 +211,17 @@ a:hover{
     justify-content: space-around;
 
   
+}
+
+@media only screen and (max-width:700px){
+    #treament_content{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+      
+    }
 }
 
 #acreds {
@@ -183,26 +233,52 @@ a:hover{
     translate: 0px 40px;
 }
 
+@media only screen and (max-width:700px){
+    #acreds {
+        width:100vw;
+        height:fit-content;
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        translate: 0px 40px;
+        margin-bottom: 5%;
+    }
+}
+
 #beauty_training{
+    position: relative;
     width:110px;
     height: 110px;
     translate: 0px 40px;
 }
+
+
+
 
 #green_salon{
     width:200px;
     height: 200px;
 }
 
+
+
 #pro_training{
     width: 150px;
     height: 150px;
 }
 
+
+
 #gti{
     width: 150px;
     height: 150px;
 }
+
+
+
+
 
 #footer {
     position: relative;
@@ -217,6 +293,24 @@ a:hover{
     justify-content: space-around;
 }
 
+
+@media only screen and (max-width:700px) {
+    #footer {
+        position: relative;
+        /* padding-left: 2rem;
+        padding-right: 2rem; */
+        padding-top: 10%;
+        padding-bottom: 10%;
+        height:60vh;
+        width:100vw;
+        background-color:gray ;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
 #social_media {
     position: relative;
     height: 100%;
@@ -228,6 +322,19 @@ a:hover{
     
 }
 
+@media only screen and (max-width:700px){
+    #social_media {
+        position: relative;
+        height: 20%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        
+    }
+}
+
 #social_media a{
     position: relative;
     font-size: 6rem;
@@ -236,10 +343,11 @@ a:hover{
 
 #social_media a:hover{
     position: relative;
-    font-size: 7rem;
+    font-size: 6.5rem;
     color: rgb(226, 43, 128);
     transition: 0.5;
 }
+
 
 #center_column{
     position: relative;
@@ -253,6 +361,22 @@ a:hover{
     
 }
 
+
+@media only screen and (max-width:700px) {
+    #center_column{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        width:60%;
+        height:100%;
+        
+    }
+    
+}
+
 #center_right{
     height:100%;
     top:15%;
@@ -260,6 +384,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-family:'Nanum Myeongjo', serif;
 }
 
 #center_left{
@@ -267,8 +392,21 @@ a:hover{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    /* justify-content: space-around; */
+    font-family:'Nanum Myeongjo', serif;
 }
+
+#center_left img{
+    position: relative;
+    width:100%;
+
+}
+
+/* #center_left img:hover{
+    width:100%;
+    
+} */
 
 h3{
     font-size: 2rem;
@@ -295,9 +433,11 @@ h4:hover{
 }
 
 #footer-contact {
+    position: relative;
     font-size: 2rem;
     color: white;
     margin:0%;
+    top:-12%;
 }
 
 #footer-contact:hover{
@@ -306,10 +446,12 @@ h4:hover{
 }
 
 #footer-copy{
+    position: absolute;
     font-size: 1rem;
     color: white;
+    bottom: 0%;
     /* margin:5%; */
-    margin-bottom: 0%;
+    /* margin-bottom: 10%; */
 }
 
 #footer-copy:hover{
@@ -327,9 +469,33 @@ h4:hover{
 }
 
 
+@media only screen and (max-width:700px) {    
+    #side_column{
+        position: relative;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width:100%;
+        height:15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;    
+    }
+}
+
+
 
 #side_column img{
    
-    height:30%;
+    width:20%;
         
 }
+
+/* @media only screen and (max-with:700px) {
+    #side_column img{
+   
+        height:100%;
+            
+    }
+} */
