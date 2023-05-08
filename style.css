@@ -225,6 +225,21 @@ a:hover{
     }
 }
 
+#prices {
+    position: relative;
+    align-items: center;
+    padding: 1rem;
+}
+
+#questions {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
 #acreds {
     width:100vw;
     position: relative;
