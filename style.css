@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaisei+Opti:wght@700&family=Lobster&family=Nanum+Myeongjo&family=Outfit:wght@400;700&family=Pacifico&family=Playfair+Display&family=Raleway:ital,wght@1,300&family=Satisfy&family=Spirax&display=swap');
 
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --imgPosition: 0px;
 }
 
 body {
     margin:0%;
-    background-color: white;
+    background-color:#361d33;
+   
 }
 
 p{
@@ -30,7 +37,8 @@ container {
 }
 
 h1{
-    color: grey;
+    color:	#c4d590;
+    /* size: 100%; */
     font-family:'Nanum Myeongjo', serif;
 }
 
@@ -56,6 +64,7 @@ h1{
 
 .boundry{
     position: relative;
+    top:1rem;
     margin: 1rem;
     width:100vw;
 }
@@ -64,10 +73,13 @@ h1{
    
 
 #banner-image {
-    width: 100%;
+    position: relative;
+    width: 50%;
+    height:50%;
     image-rendering: auto;
     object-fit: contain;
-    translate: 0% -30%;     
+    rotate: 90deg;
+    translate: 50% -45%;     
 
 }
 
